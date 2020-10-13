@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         rb2D.MovePosition(rb2D.position + movement * speed * Time.fixedDeltaTime);
-        currentHealth -= (lifeDrain * Time.fixedDeltaTime);
+        currentHealth -= lifeDrain ;
         healthBar.SetHealth(currentHealth);
     }
 }
