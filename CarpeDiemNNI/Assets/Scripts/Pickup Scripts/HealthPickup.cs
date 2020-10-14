@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class HealthPickup : MonoBehaviour
 {
+    public int healthAmount;
     // Start is called before the first frame update
     void Start()
     {

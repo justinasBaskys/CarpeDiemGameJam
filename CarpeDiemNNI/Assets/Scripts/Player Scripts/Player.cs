@@ -6,32 +6,47 @@ public class Player : MonoBehaviour
 {
     public int maxHealth;
     public float lifeDrain;
-    public float speed = 5f;
+    public string enemyTag, healthTag, moneyTag;
 
     public HealthBar healthBar;
 
-
-    private Rigidbody2D rb2D;
     private float currentHealth;
+    
+
 
     public void Start()
     {
-        rb2D = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         healthBar.StartHealth(maxHealth);
     }
-
-    private Vector2 movement = Vector3.zero;
+ 
     private void Update()
     {
-        movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-
+        currentHealth -= lifeDrain * Time.deltaTime;
+        healthBar.SetHealth(currentHealth);
     }
 
-    private void FixedUpdate()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        rb2D.MovePosition(rb2D.position + movement * speed * Time.fixedDeltaTime);
-        currentHealth -= lifeDrain ;
-        healthBar.SetHealth(currentHealth);
+        if (other.tag == enemyTag)
+        {
+            Debug.Log("Enemy Collision");
+            currentHealth -= other.gameObject.GetComponent<EnemyCollider>().damageAmount;
+            Destroy(other.gameObject);
+        }
+        if(other.tag == healthTag)
+        {
+            Debug.Log("Health Collision");
+            currentHealth += other.gameObject.GetComponent<HealthPickup>().healthAmount;
+            Destroy(other.gameObject);
+            if (currentHealth > maxHealth)
+            {
+                currentHealth = maxHealth;
+            }
+        }
+        if(other.tag == moneyTag)
+        {
+            Debug.Log("Money Collision");
+        }
     }
 }
