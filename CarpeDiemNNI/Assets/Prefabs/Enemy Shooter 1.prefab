@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4335136938276955337}
   - component: {fileID: 1246535897903255478}
   - component: {fileID: 149446671796999699}
-  - component: {fileID: 422962131549078775}
   - component: {fileID: 3046955258961155162}
   - component: {fileID: 5275073737681201627}
   - component: {fileID: 6492586906451407276}
@@ -83,19 +82,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
---- !u!114 &422962131549078775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055741892425645160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3114e533cd950c40bca6fe811f3feb7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 50
 --- !u!114 &3046955258961155162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1edf080fbfc91344ba648cecc6a0e099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageAmount: 10
   speed: 0
   stoppingDistance: 0
   waypoint: {fileID: 0}
