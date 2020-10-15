@@ -31,7 +31,7 @@ public class Player : MonoBehaviour
         if (other.tag == enemyTag)
         {
             Debug.Log("Enemy Collision");
-            currentHealth -= other.gameObject.GetComponent<EnemyCollider>().damageAmount;
+            currentHealth -= other.gameObject.GetComponent<Enemy>().damageAmount;
             Destroy(other.gameObject);
         }
         if(other.tag == healthTag)

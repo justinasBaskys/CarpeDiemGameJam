@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthPickup : MonoBehaviour
+public class Enemy : MonoBehaviour
 {
-    public int healthAmount;
+    public int damageAmount;
 }
