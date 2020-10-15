@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 4335136938276955337}
   - component: {fileID: 1246535897903255478}
-  - component: {fileID: 670242950608957829}
   - component: {fileID: 4955119412727021650}
   - component: {fileID: 4074408359177178648}
+  - component: {fileID: 3713611952330518285}
   m_Layer: 0
-  m_Name: Health
+  m_Name: Health2X
   m_TagString: Health
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -55,19 +55,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &670242950608957829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1055741892425645160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8df30d720c7f4b54ab9fc4d751f0ec33, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthAmount: 25
 --- !u!58 &4955119412727021650
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -83,7 +70,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.1
+  m_Radius: 0.13
 --- !u!212 &4074408359177178648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -124,7 +111,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8618c91005e75b54ea58a8199804fa44, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0547b06d5dfc68d489edba18cd076f76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -135,3 +122,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3713611952330518285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1055741892425645160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8df30d720c7f4b54ab9fc4d751f0ec33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthAmount: 50
