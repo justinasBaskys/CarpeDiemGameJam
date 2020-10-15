@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class ShooterEnemy : MonoBehaviour
+public class ShooterEnemy : Enemy
 {
     public float speed;
     public float stoppingDistance;
