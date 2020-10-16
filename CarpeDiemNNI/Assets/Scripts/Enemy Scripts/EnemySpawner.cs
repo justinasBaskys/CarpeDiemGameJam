@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemy;
     public float spawnRate;
-    public float minX, maxX;
-    public float objectSpeedX, objectSpeedY;
+    public float itemForce;
 
+    public GameObject[] spawnItems;
+    public Transform[] spawnPoints;
     
-    private float randX;
-    private Vector2 spawnPoint;
     private float spawnTime;
 
     // Update is called once per frame
     void Update()
     {
-        if(Time.time > spawnTime)
+        if (Time.time > spawnTime)
         {
             spawnTime = Time.time + spawnRate;
-            randX = Random.Range(minX, maxX);
-            spawnPoint = new Vector2(randX, transform.position.y);
-            Instantiate(enemy, spawnPoint, Quaternion.identity);
+            int randomItem = Random.Range(0, spawnItems.Length);
+            int randSpawn = Random.Range(0, spawnPoints.Length);
+            GameObject spawnedObject = Instantiate(spawnItems[randomItem], spawnPoints[randSpawn].position, transform.rotation);
+            Rigidbody2D rb = spawnedObject.GetComponent<Rigidbody2D>();
+            rb.AddForce(spawnPoints[randSpawn].up * itemForce, ForceMode2D.Impulse);
         }
     }
 }

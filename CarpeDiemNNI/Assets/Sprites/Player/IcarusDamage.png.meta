@@ -1,28 +1,16 @@
 fileFormatVersion: 2
-guid: 662d183531ee4994191ed7d7fa493b71
+guid: 80126a1b199dca94f8131cc78512246b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -505814110832146591
-    second: IcarusDeath_0
+      213: -1198247929295590435
+    second: IcarusDamage1-Sheet_0
   - first:
-      213: -18528833004636297
-    second: IcarusDeath_1
+      213: 5640016839426764715
+    second: IcarusDamage1-Sheet_1
   - first:
-      213: -5909810934569392136
-    second: IcarusDeath_2
-  - first:
-      213: -6230452451971421405
-    second: IcarusDeath_3
-  - first:
-      213: 4920368473128131597
-    second: IcarusDeath_4
-  - first:
-      213: 8999758976451251216
-    second: IcarusDeath_5
-  - first:
-      213: 7572536791022108211
-    second: IcarusDeath_6
+      213: -464131770324233599
+    second: IcarusDamage1-Sheet_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -67,7 +55,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,11 +94,35 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IcarusDeath_0
+      name: IcarusDamage1-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,20 +130,20 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16748710fbcfaf8f0800000000000000
-      internalID: -505814110832146591
+      spriteID: ddb2d7d5bd7fe5fe0800000000000000
+      internalID: -1198247929295590435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IcarusDeath_1
+      name: IcarusDamage1-Sheet_1
       rect:
         serializedVersion: 2
         x: 44
@@ -139,20 +151,20 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 777f7a2ef1c2ebff0800000000000000
-      internalID: -18528833004636297
+      spriteID: bafe041fe6d554e40800000000000000
+      internalID: 5640016839426764715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IcarusDeath_2
+      name: IcarusDamage1-Sheet_2
       rect:
         serializedVersion: 2
         x: 88
@@ -160,98 +172,14 @@ TextureImporter:
         width: 44
         height: 45
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f7a54b34422cfda0800000000000000
-      internalID: -5909810934569392136
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcarusDeath_3
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 0
-        width: 44
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 32b284a518cf889a0800000000000000
-      internalID: -6230452451971421405
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcarusDeath_4
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 0
-        width: 44
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0c55dc9e09a84440800000000000000
-      internalID: 4920368473128131597
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcarusDeath_5
-      rect:
-        serializedVersion: 2
-        x: 220
-        y: 0
-        width: 44
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 01c82873b1195ec70800000000000000
-      internalID: 8999758976451251216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IcarusDeath_6
-      rect:
-        serializedVersion: 2
-        x: 264
-        y: 0
-        width: 44
-        height: 45
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 33ef275271e071960800000000000000
-      internalID: 7572536791022108211
+      spriteID: 182d9dc2d921f89f0800000000000000
+      internalID: -464131770324233599
       vertices: []
       indices: 
       edges: []
