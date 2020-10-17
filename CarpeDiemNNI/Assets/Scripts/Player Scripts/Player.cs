@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public Animator animator;
     public HealthBar healthBar;
     public Rigidbody2D rigidBody;
+    public GameManager gameManager;
 
     private float currentHealth;
     private bool isAlive;
@@ -41,24 +42,29 @@ public class Player : MonoBehaviour
         }
     }
 
+    public void HealPlayer(int health)
+    {
+        currentHealth += health;
+        if (currentHealth > maxHealth)
+        {
+            currentHealth = maxHealth;
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == enemyTag)
         {
             Debug.Log("Enemy Collision");
-            currentHealth -= other.gameObject.GetComponent<Enemy>().damageAmount;
+            HealPlayer(-other.gameObject.GetComponent<Enemy>().damageAmount);
             animator.SetTrigger("Damage");
             Destroy(other.gameObject);
         }
         if(other.tag == healthTag)
         {
             Debug.Log("Health Collision");
-            currentHealth += other.gameObject.GetComponent<HealthPickup>().healthAmount;
-            Destroy(other.gameObject);
-            if (currentHealth > maxHealth)
-            {
-                currentHealth = maxHealth;
-            }
+            HealPlayer(other.gameObject.GetComponent<HealthPickup>().healthAmount);
+            Destroy(other.gameObject); 
         }
         if(other.tag == moneyTag)
         {
