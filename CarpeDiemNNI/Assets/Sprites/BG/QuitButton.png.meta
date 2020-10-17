@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 5841f582a27085a409e5e8e7061ae194
+guid: ae0ecb35bb547884196f09802fb3bb0c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6281131167225639102
-    second: Seagull_0
+      213: 4304446102398311253
+    second: QuitButton_0
   - first:
-      213: -2286570292335278677
-    second: Seagull_1
-  - first:
-      213: -7844154010315156741
-    second: Seagull_2
+      213: -8948310650188516998
+    second: QuitButton_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -98,13 +95,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Seagull_0
+      name: QuitButton_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 38
-        height: 21
+        width: 89
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +109,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb07e1a848f0b2750800000000000000
-      internalID: 6281131167225639102
+      spriteID: 55b14489ce67cbb30800000000000000
+      internalID: 4304446102398311253
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seagull_1
+      name: QuitButton_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 89
         y: 0
-        width: 38
-        height: 21
+        width: 89
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,29 +130,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba505631f687440e0800000000000000
-      internalID: -2286570292335278677
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Seagull_2
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 0
-        width: 38
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bf295bbdc77f32390800000000000000
-      internalID: -7844154010315156741
+      spriteID: a713ba3bfd631d380800000000000000
+      internalID: -8948310650188516998
       vertices: []
       indices: 
       edges: []

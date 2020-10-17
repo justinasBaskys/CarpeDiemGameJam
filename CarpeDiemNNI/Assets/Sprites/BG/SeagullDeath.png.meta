@@ -1,16 +1,22 @@
 fileFormatVersion: 2
-guid: 5841f582a27085a409e5e8e7061ae194
+guid: f49bb33f39e3b3943a803823d61b3a42
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6281131167225639102
-    second: Seagull_0
+      213: -1167967447680242786
+    second: SeagullDeath_0
   - first:
-      213: -2286570292335278677
-    second: Seagull_1
+      213: 3404874690156383624
+    second: SeagullDeath_1
   - first:
-      213: -7844154010315156741
-    second: Seagull_2
+      213: -11470959601305463
+    second: SeagullDeath_2
+  - first:
+      213: -7253530034458348066
+    second: SeagullDeath_3
+  - first:
+      213: -6058095739764025484
+    second: SeagullDeath_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -98,7 +104,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Seagull_0
+      name: SeagullDeath_0
       rect:
         serializedVersion: 2
         x: 0
@@ -112,14 +118,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb07e1a848f0b2750800000000000000
-      internalID: 6281131167225639102
+      spriteID: e9bacc36bcb8acfe0800000000000000
+      internalID: -1167967447680242786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seagull_1
+      name: SeagullDeath_1
       rect:
         serializedVersion: 2
         x: 38
@@ -133,14 +139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba505631f687440e0800000000000000
-      internalID: -2286570292335278677
+      spriteID: 88d4d7bad7b804f20800000000000000
+      internalID: 3404874690156383624
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seagull_2
+      name: SeagullDeath_2
       rect:
         serializedVersion: 2
         x: 76
@@ -154,8 +160,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf295bbdc77f32390800000000000000
-      internalID: -7844154010315156741
+      spriteID: 9883bb7193f37dff0800000000000000
+      internalID: -11470959601305463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullDeath_3
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 38
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5bb705dd8465b90800000000000000
+      internalID: -7253530034458348066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SeagullDeath_4
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 0
+        width: 38
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477de0895025deba0800000000000000
+      internalID: -6058095739764025484
       vertices: []
       indices: 
       edges: []
