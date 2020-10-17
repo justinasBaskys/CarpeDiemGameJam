@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: 5841f582a27085a409e5e8e7061ae194
+guid: e849e974bfa9dfc4882e0ca59331ba77
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6281131167225639102
-    second: Seagull_0
+      213: -860582620311789737
+    second: AngryCloudWhole_0
   - first:
-      213: -2286570292335278677
-    second: Seagull_1
+      213: 2922490306075847323
+    second: AngryCloudWhole_1
   - first:
-      213: -7844154010315156741
-    second: Seagull_2
+      213: 2100306105688184379
+    second: AngryCloudWhole_2
+  - first:
+      213: -7127126921959088343
+    second: AngryCloudWhole_3
+  - first:
+      213: 1383497235878990122
+    second: AngryCloudWhole_4
+  - first:
+      213: 4736083864408664517
+    second: AngryCloudWhole_5
+  - first:
+      213: -8761105190440892273
+    second: AngryCloudWhole_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -98,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Seagull_0
+      name: AngryCloudWhole_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 38
-        height: 21
+        width: 110
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb07e1a848f0b2750800000000000000
-      internalID: 6281131167225639102
+      spriteID: 75fd0789aa89e04f0800000000000000
+      internalID: -860582620311789737
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seagull_1
+      name: AngryCloudWhole_1
       rect:
         serializedVersion: 2
-        x: 38
+        x: 110
         y: 0
-        width: 38
-        height: 21
+        width: 110
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -133,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ba505631f687440e0800000000000000
-      internalID: -2286570292335278677
+      spriteID: b9a6c290375ce8820800000000000000
+      internalID: 2922490306075847323
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Seagull_2
+      name: AngryCloudWhole_2
       rect:
         serializedVersion: 2
-        x: 76
+        x: 220
         y: 0
-        width: 38
-        height: 21
+        width: 110
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +166,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bf295bbdc77f32390800000000000000
-      internalID: -7844154010315156741
+      spriteID: b36d0257649c52d10800000000000000
+      internalID: 2100306105688184379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryCloudWhole_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 0
+        width: 110
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f518b53db571d90800000000000000
+      internalID: -7127126921959088343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryCloudWhole_4
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 110
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a215d4ce76b233310800000000000000
+      internalID: 1383497235878990122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryCloudWhole_5
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 0
+        width: 110
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9a98c8e23f9b140800000000000000
+      internalID: 4736083864408664517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AngryCloudWhole_6
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 110
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8880f36f3d4a6680800000000000000
+      internalID: -8761105190440892273
       vertices: []
       indices: 
       edges: []
