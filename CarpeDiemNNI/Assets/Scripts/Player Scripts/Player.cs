@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     public Rigidbody2D rigidBody;
     public GameManager gameManager;
     public PolygonCollider2D playerCollider;
+    public AudioSource damangeSound;
 
     private float currentHealth;
     private bool isAlive;
@@ -61,6 +62,7 @@ public class Player : MonoBehaviour
             Debug.Log("Enemy Collision");
             HealPlayer(-other.gameObject.GetComponent<Enemy>().damageAmount);
             animator.SetTrigger("Damage");
+            damangeSound.Play();
             if (other.tag != enemyInvTag) // If enemy is not tagged as invincible "enemyInvTag" they will be destroyed.
             {
                 Destroy(other.gameObject);
