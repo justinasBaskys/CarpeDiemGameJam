@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Player : MonoBehaviour
     public float lifeDrain;
     public float gravityScale;
     public string enemyTag, healthTag, moneyTag, enemyInvTag;
+    public int scoreCount;
 
     public PlayerMovement playerMovement;
     public Animator animator;
@@ -16,9 +18,10 @@ public class Player : MonoBehaviour
     public GameManager gameManager;
     public PolygonCollider2D playerCollider;
     public AudioSource damangeSound;
+    public Text scoreText;
 
     private float currentHealth;
-    private bool isAlive;
+    private bool isAlive;    
 
     public void Start()
     {
@@ -27,6 +30,8 @@ public class Player : MonoBehaviour
         healthBar.StartHealth(maxHealth);
         isAlive = true;
         rigidBody.gravityScale = 0;
+        scoreCount = 0;
+        scoreText.text = "0";
     }
 
     private void Update()
@@ -51,7 +56,7 @@ public class Player : MonoBehaviour
         currentHealth += health;
         if (currentHealth > maxHealth)
         {
-            currentHealth = maxHealth;
+            currentHealth = maxHealth;            
         }
     }
 
@@ -72,6 +77,8 @@ public class Player : MonoBehaviour
         {
             Debug.Log("Health Collision");
             HealPlayer(other.gameObject.GetComponent<HealthPickup>().healthAmount);
+            scoreCount += 1;
+            scoreText.text = scoreCount.ToString();
             Destroy(other.gameObject);
         }
         if (other.tag == moneyTag)
