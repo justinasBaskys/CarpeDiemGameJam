@@ -25,7 +25,7 @@ public class GameManager : MonoBehaviour
     public void Update()
     {
         
-        if(foregroundTime > 0 && isFrozen == true)
+        if(foregroundTime > 0)
 		{
             foreground.transform.position += new Vector3(0, speed * Time.deltaTime, 0);
             foregroundTime -= Time.deltaTime;
@@ -33,7 +33,6 @@ public class GameManager : MonoBehaviour
         }
 		else if(isFrozen == true)
 		{
-            foregroundTime = timer;
             playerMovement.enabled = true;
 
             foreach (GameObject spawner in spawners)
