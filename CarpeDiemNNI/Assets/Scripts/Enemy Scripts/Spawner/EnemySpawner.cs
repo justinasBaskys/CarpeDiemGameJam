@@ -6,12 +6,16 @@ public class EnemySpawner : MonoBehaviour
 {
     public float spawnRate;
     public float itemForce;
+    public float startTime;
 
     public GameObject[] spawnItems;
     public Transform[] spawnPoints;
     
     private float spawnTime;
-
+    private void Start()
+    {
+        spawnTime = startTime;
+    }
     // Update is called once per frame
     void Update()
     {

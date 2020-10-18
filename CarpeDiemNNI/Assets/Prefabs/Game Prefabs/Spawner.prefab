@@ -54,6 +54,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spawnRate: 2
   itemForce: -5
+  startTime: 10
   spawnItems:
   - {fileID: 4787242337618205391, guid: 8731897f8375a7348b541f5c4cf4a6a9, type: 3}
   - {fileID: 4787242337618205391, guid: 8731897f8375a7348b541f5c4cf4a6a9, type: 3}
