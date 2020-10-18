@@ -5,21 +5,53 @@ public class GameManager : MonoBehaviour
     public PlayerMovement playerMovement;
     public Player player;
     public GameObject[] spawners;
-    public GameObject foreground;
+    public GameObject foreground, background;
+    public float timer, speed, daySpeed;
 
+    private float foregroundTime;
+    private bool isFrozen, goingUp;
     public void Start()
     {
-        /*
+        foregroundTime = timer;
         playerMovement.enabled = false;
         foreach (GameObject spawner in spawners)
         {
             spawner.SetActive(false);
         }
-        */
+        isFrozen = true;
+        goingUp = true;
     }
 
     public void Update()
     {
+        
+        if(foregroundTime > 0 && isFrozen == true)
+		{
+            foreground.transform.position += new Vector3(0, speed * Time.deltaTime, 0);
+            foregroundTime -= Time.deltaTime;
+            player.HealPlayer(player.maxHealth);
+        }
+		else if(isFrozen == true)
+		{
+            foregroundTime = timer;
+            playerMovement.enabled = true;
+
+            foreach (GameObject spawner in spawners)
+            {
+                spawner.SetActive(true);
+            }
+        }
+
+        if (background.transform.position.y < -970)
+		{
+            goingUp = false;  
+        }
+        else if (background.transform.position.y > 0)
+		{
+            goingUp = true;
+		}
+        if (goingUp == true) {background.transform.position += new Vector3(0, -daySpeed * Time.deltaTime, 0); }
+        else { background.transform.position += new Vector3(0, daySpeed * Time.deltaTime, 0); }
         
     }
 
