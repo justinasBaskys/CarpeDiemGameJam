@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour
     public Player player;
     public GameObject[] spawners;
     public GameObject foreground, background;
+    public EndGameMenu endMenu;
     public float timer, speed, daySpeed;
 
     private float foregroundTime;
@@ -56,5 +57,6 @@ public class GameManager : MonoBehaviour
     public void EndGame()
     {
         Debug.Log("Game Over");
+        endMenu.EndGamePause();
     }
 }

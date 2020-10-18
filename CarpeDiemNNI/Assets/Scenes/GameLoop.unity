@@ -191,9 +191,10 @@ MonoBehaviour:
   - {fileID: 1150623410}
   foreground: {fileID: 722289858}
   background: {fileID: 140871502}
-  timer: 8
-  speed: -1.2
-  daySpeed: 0
+  endMenu: {fileID: 487908806}
+  timer: 6
+  speed: -0.1
+  daySpeed: 3
 --- !u!4 &39613331
 Transform:
   m_ObjectHideFlags: 0
@@ -545,7 +546,7 @@ GameObject:
   - component: {fileID: 177363049}
   - component: {fileID: 177363048}
   m_Layer: 5
-  m_Name: PauseMenu
+  m_Name: Game Over Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1369,10 +1370,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 487908805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac27d638bcab24d48b40ff1eec1c768d, type: 3}
+  m_Script: {fileID: 11500000, guid: 5966b41cb6c490848b96cfe8ddf9d676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 177363047}
+  GameOverMenuUI: {fileID: 177363047}
 --- !u!114 &487908807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2521,7 +2522,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 487908806}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: EndGameMenu, Assembly-CSharp
         m_MethodName: LoadMenu
         m_Mode: 1
         m_Arguments:
@@ -3144,7 +3145,7 @@ GameObject:
   - component: {fileID: 1755719111}
   - component: {fileID: 1755719110}
   m_Layer: 5
-  m_Name: ContinueButton
+  m_Name: RestartButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3213,8 +3214,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 487908806}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: Resume
+        m_TargetAssemblyTypeName: EndGameMenu, Assembly-CSharp
+        m_MethodName: Restart
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3244,7 +3245,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5f252d98cef3ef849a3154bffc922f87, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7e5f8d566712f85428aeb4e3b49a6936, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3410,7 +3411,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 487908806}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: EndGameMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
