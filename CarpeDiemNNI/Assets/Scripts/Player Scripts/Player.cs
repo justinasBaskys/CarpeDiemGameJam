@@ -7,7 +7,9 @@ public class Player : MonoBehaviour
     public int maxHealth;
     public float lifeDrain;
     public float gravityScale;
-    public string enemyTag, healthTag, moneyTag;
+    public string enemyTag;
+    public string enemyInvTag;
+    public string healthTag, moneyTag;
 
     public PlayerMovement playerMovement;
     public Animator animator;
@@ -43,12 +45,20 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == enemyTag)
+        if (other.tag == enemyTag || other.tag == enemyInvTag) //Handles collisions between enemy and player
         {
             Debug.Log("Enemy Collision");
+<<<<<<< Updated upstream
             currentHealth -= other.gameObject.GetComponent<Enemy>().damageAmount;
+=======
+            HealPlayer(-other.gameObject.GetComponent<Enemy>().damageAmount); // Heals player with negative amount of damage from enemy.
+>>>>>>> Stashed changes
             animator.SetTrigger("Damage");
-            Destroy(other.gameObject);
+            if (other.tag != enemyInvTag) // If enemy is not tagged as invincible "enemyInvTag" they will be destroyed.
+            {
+                Destroy(other.gameObject);
+            }
+                
         }
         if(other.tag == healthTag)
         {
