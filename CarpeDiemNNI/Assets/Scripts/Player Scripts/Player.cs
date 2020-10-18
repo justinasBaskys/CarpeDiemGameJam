@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     public HealthBar healthBar;
     public Rigidbody2D rigidBody;
     public GameManager gameManager;
+    public PolygonCollider2D playerCollider;
 
     private float currentHealth;
     private bool isAlive;
@@ -36,9 +37,11 @@ public class Player : MonoBehaviour
             Debug.Log("Player was killed");
             animator.SetTrigger("Death");
             playerMovement.enabled = false;
+            playerCollider.enabled = false;
             rigidBody.gravityScale = 1;
             isAlive = false;
             FindObjectOfType<GameManager>().EndGame();
+
         }
     }
 

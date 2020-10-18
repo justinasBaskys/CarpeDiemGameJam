@@ -33,12 +33,12 @@ public class GameManager : MonoBehaviour
         }
 		else if(isFrozen == true)
 		{
-            playerMovement.enabled = true;
-
+            playerMovement.enabled = true;            
             foreach (GameObject spawner in spawners)
             {
                 spawner.SetActive(true);
             }
+            isFrozen = false;
         }
 
         if (background.transform.position.y < -970)
@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
 		}
         if (goingUp == true) {background.transform.position += new Vector3(0, -daySpeed * Time.deltaTime, 0); }
         else { background.transform.position += new Vector3(0, daySpeed * Time.deltaTime, 0); }
-        
     }
 
     public void EndGame()
