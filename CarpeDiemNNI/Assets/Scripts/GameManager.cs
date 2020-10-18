@@ -2,8 +2,6 @@
 
 public class GameManager : MonoBehaviour
 {
-<<<<<<< Updated upstream
-=======
     public PlayerMovement playerMovement;
     public Player player;
     public GameObject[] spawners;
@@ -25,7 +23,6 @@ public class GameManager : MonoBehaviour
         
     }
 
->>>>>>> Stashed changes
     public void EndGame()
     {
         Debug.Log("Game Over");
